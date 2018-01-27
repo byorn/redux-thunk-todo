@@ -32,7 +32,7 @@ export function loadItems() {
     return (dispatch) => {
         //dispatch(itemsIsLoading(true));
 
-        fetch('http://localhost:3000/data.json',{
+        fetch('/data.json',{
                 method: 'GET',
                 headers: {
                   'Content-Type': 'application/json'

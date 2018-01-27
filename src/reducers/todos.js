@@ -4,7 +4,7 @@
 //2.) copy of current state
 
 function todos(state = [], action){
-  console.log(state);
+
   switch(action.type){
     case 'ADD_TODO_ITEM':
 
@@ -12,7 +12,6 @@ function todos(state = [], action){
                           id: state.length+1,
                           text: action.text
                        };
-        let newarr = [...state, todoItem];
 
         return [...state, todoItem];
 
@@ -27,7 +26,7 @@ function todos(state = [], action){
                  }
              )
     case 'DELETE_TODOITEM':
-          console.log("DElete:"+state);
+
         return state.filter(todo => {
 
              return (todo.id !== action.id);
@@ -35,12 +34,11 @@ function todos(state = [], action){
 
         })
 
-return state;
     case 'ITEMS_LOADED':
         return action.items;
     default:
     return state;
   }
-  return state;
+  
 }
 export default todos;

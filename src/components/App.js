@@ -17,7 +17,7 @@ class App extends Component {
 
  handleChange(event){
    //short cut es6
-   const {name, value} = event.target;
+   const {value} = event.target;
    this.setState({todoItemText:value});
  }
 
@@ -35,7 +35,7 @@ class App extends Component {
  }
 
   render() {
-    const { items, todos, addTodoItem,loadItems } = this.props
+    const { todos, addTodoItem } = this.props
 
 
 

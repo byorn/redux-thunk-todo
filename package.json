@@ -1,5 +1,6 @@
 {
   "name": "redux-todo-list",
+  "homepage":"http://www.byorns.com/redux-todo-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
